@@ -11,6 +11,16 @@
 
 
 /* CUSTOM PROPS */
+:root {
+  --blue:#0079ff;
+  --light-blue:#4b6a9b;
+  --dark-blue:#1e2a47;
+  --dark:#141d2f;
+  --light-dark:#2b3442;
+  --dark-white:#f6f8ff;
+  --white:#fefefe;
+  --gray:#697c9a;
+}
 
 
 /* GLOBAL */
