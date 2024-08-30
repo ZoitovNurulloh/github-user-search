@@ -7,9 +7,6 @@
 }
 
 
-/* FONTS */
-
-
 /* CUSTOM PROPS */
 :root {
   --blue:#0079ff;
@@ -41,8 +38,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #fff;
-  color: #222;
+  background-color: var(--dark-white);
+  color: var(--light-blue);
   font-family: "Space Mono", "Arial", sans-serif;
   font-size: 15px;
   line-height: 25px;
@@ -52,18 +49,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-/* CONTAINER */
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 
 /* VISUALLY-HIDDEN */
 
@@ -94,15 +79,6 @@ input:-webkit-autofill:focus {
 ::placeholder {
   color: rgba(52, 49, 61, 0.5);
 } */
-
-
-
-/* MAIN-CONTENT */
-
-.main-content {
-  flex-grow: 1;
-}
-
 
 
 /* RETINA BACKGROUND IMAGES */
