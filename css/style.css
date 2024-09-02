@@ -11,8 +11,6 @@
 :root {
   --blue:#0079ff;
   --light-blue:#4b6a9b;
-  --dark-blue:#1e2a47;
-  --dark:#141d2f;
   --light-dark:#2b3442;
   --dark-white:#f6f8ff;
   --white:#fefefe;
@@ -80,16 +78,249 @@ img {
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
-  -webkit-text-fill-color: var(--heading-color);
-  -webkit-box-shadow: 0 0 0px 40rem #ffff inset;
+-webkit-text-fill-color: var(--heading-color);
+-webkit-box-shadow: 0 0 0px 40rem #ffff inset;
 } */
 
 /* PLACEHOLDER STYLE */
 /*
 ::placeholder {
-  color: rgba(52, 49, 61, 0.5);
+color: rgba(52, 49, 61, 0.5);
 } */
 
+
+/* CARD */
+
+.card {
+  width: 100%;
+  max-width: 760px;
+  padding:0 15px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.header__heading {
+  font-size: 26px;
+  line-height: 39px;
+  margin-right: 16px;
+  color: var(--light-dark);
+}
+
+.btn {
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.btn__heading {
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  margin-right: 16px;
+  color:var(--gray) ;
+}
+
+.btn__img {
+  width: 20px;
+  height: 20px;
+  color: var(--gray);
+  display: block;
+}
+
+.btn:hover .btn__heading,
+.btn:active .btn__heading,
+.btn:hover .btn__img,
+.btn:active .btn__img {
+  color:var(--light-dark);
+}
+
+
+/* FORM */
+
+.form {
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  background: var(--white);
+  margin-bottom: 24px;
+}
+
+.form__group {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 10px 32px;
+}
+
+.form__img {
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin-right: 24px;
+}
+
+.form__input {
+  width: 100%;
+  margin-right: auto;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--light-dark);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.form__input:placeholder-shown {
+  color: var(--light-blue);
+}
+
+.form__input:focus {
+  outline: 0;
+}
+
+.form__btn {
+  margin-left: 16px;
+  padding: 13px 24px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--fff);
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--blue);
+}
+
+.form__btn:hover {
+  opacity: 0.7;
+}
+
+.form__warning {
+  top: 25px;
+  right: 125px;
+  position: absolute;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--red);
+}
+
+/* USER */
+.user {
+  display: flex;
+  padding: 48px;
+  background-color:var(--white);
+  border-radius: 15px;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+}
+
+.user__picture {
+  display: block;
+  flex-shrink: 0;
+  margin-right: 36px;
+}
+
+.user__img {
+  display: block;
+  width: 117px;
+  height: 117px;
+  border-radius: 50%;
+}
+
+.user__info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.user__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.user__name {
+  font-size: 26px;
+  line-height: 39px;
+  color: var(--light-dark);
+}
+
+.user__joined {
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--gray);
+}
+
+.user__mail {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--blue);
+}
+
+.user__bio {
+  margin-bottom: 32px;
+}
+
+.user__statistics {
+  padding: 15px 32px;
+  border-radius: 10px;
+  background-color: var(--dark-white);
+  margin-bottom: 36px;
+}
+
+.user__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.user__statistic {
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.user__number {
+  font-size: 22px;
+  line-height: 33px;
+  color: var(--light-dark);
+  font-weight: 700;
+}
+
+.user__about {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user__description {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.user__description:nth-child(1),
+.user__description:nth-child(2) {
+  margin-bottom: 22px;
+}
+
+.user__icon {
+  margin-right: 12px;
+  color: var(--light-blue);
+}
+
+.user__website {
+  color: var(--light-blue);
+}
 
 /* RETINA BACKGROUND IMAGES */
 @media
