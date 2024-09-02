@@ -63,7 +63,14 @@ img {
   overflow: hidden;
 }
 
+.dark {
+  --light-dark:#fff;
+  --gray:#fff;
+  --light-blue:#fff;
+  --white:#1E2A47;
+  --dark-white:#141D2F;
 
+}
 
 /* AUTOFILL-STYLES */
 /*
