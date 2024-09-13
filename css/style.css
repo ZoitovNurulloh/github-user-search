@@ -233,12 +233,14 @@ color: rgba(52, 49, 61, 0.5);
   width: 117px;
   height: 117px;
   border-radius: 50%;
+  background-color:#697c9a;
 }
 
 .user__info {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  min-height: 130px;
 }
 .user__wrapper {
   display: flex;
@@ -321,6 +323,7 @@ color: rgba(52, 49, 61, 0.5);
 .user__website {
   color: var(--light-blue);
 }
+
 
 /* RETINA BACKGROUND IMAGES */
 @media
